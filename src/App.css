@@ -1,0 +1,16 @@
+.HEADER {
+  background-image:url("./assets/pexels-alex-knight-2599247.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+.FOOTER {
+  background-image:url("./assets/pexels-alex-montes-1820563.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.CONTENT {
+  background-color:color-mix(in srgb, black 80%, gray 20%)
+}
