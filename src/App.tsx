@@ -1,10 +1,12 @@
-import { Header,Content } from './Pages' 
+import { Header,Content, Footer } from './Pages' 
+import './App.css'
 
 const App = () => {
   return (
     <>
     <Header />
     <Content />
+    <Footer />
     </>
   )
 }
