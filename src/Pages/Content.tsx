@@ -29,22 +29,22 @@ const showcaseItems: showcaseItemsProps[] = [
 ]
 const Content = () => {
   return (
-    <div className=" h-screen w-screen">
+    <div className="CONTENT h-screen w-screen bg-yellow-200 flex flex-col items-center justify-center gap-6">
       <div>
         <div>
-          <p>Lorem Ipsum Generum Datum Polinia</p>
-          <h2>Lorem Generum Ipsum</h2>
+          <p className='text-center text-white text-sm'>Lorem Ipsum Generum Datum Polinia</p>
+          <h2 className='text-center text-white text-2xl'>Lorem Generum Ipsum</h2>
         </div>
       </div>
-      <div>
+      <div className='flex w-[80%] justify-between '>
         {
           showcaseItems.map((current) => {
             return (
-              <div>
-                <img src={current.imageSource} />
-                <div>
-                  <p>{current.place}</p>
-                  <p>{current.description}</p>
+              <div className="relative">
+                <img className="w-[260px] h-[350px]  " src={current.imageSource} />
+                <div className=" absolute bottom-0 w-[100%] z-20 before:absolute before:content-[''] before:w-full before:h-full before:bg-black/50 before:blur-lg before:inset-0 before:-z-30 ">
+                  <p className='text-center text-white'>{current.place}</p>
+                  <p className='text-center text-white'>{current.description}</p>
                 </div>
               </div>
             )
