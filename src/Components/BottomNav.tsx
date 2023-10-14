@@ -37,19 +37,19 @@ const BottomNav = () => {
 	}, [activeBottomItem]);
 	console.log(activeBottomItem);
 	return (
-		<div className=" flex flex-row justify-between ">
+		<div className=" flex flex-row justify-between pb-5">
 			{bottomNavItems.map((current, index) => {
 				const bottomStyle: string =
 					activeBottomItem === index
-						? "border-b-blue-500"
-						: "border-b-red-500";
+						? "border-b-red-500"
+						: "border-b-gray-500";
 				return (
 					<div
 						key={index}
-						className={`border-b-2 ${bottomStyle} px-5 pb-8 flex flex-col gap-1`}
+						className={`border-b-2 ${bottomStyle} pb-5 flex flex-col gap-1`}
 					>
-						<p>{current.description}</p>
-						<Link className="flex gap-5">
+						<p className="text-white ">{current.description}</p>
+						<Link className="flex gap-5 text-white font-extrabold">
 							{current.link}
 							<img className=" w-6 h-6 " src={arrowright} />
 						</Link>
